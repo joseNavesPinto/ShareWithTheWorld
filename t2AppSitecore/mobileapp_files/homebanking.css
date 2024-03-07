@@ -1,0 +1,1258 @@
+﻿/*
+    Custom Styles
+*/
+/* Override Bootstrap */
+.container-fluid,
+.col-sm-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+.card {
+    box-shadow: none!important;
+    padding:0 !important;
+}
+.card-body {
+    padding: 0;
+}
+.modal-backdrop{
+    background-color: revert;
+}
+.modal-open .modal {
+    overflow-y: hidden;
+}
+
+/* Modal Eurobic */
+.modal-eurobic .close {
+    color: #dc3545;
+    background: #ffffff;
+    font-size: 20px!important;
+}
+.modal-eurobic .close:hover {
+    color: #000!important;
+}
+
+/* Minimal styles */
+.min-item {
+    min-height: 300px;
+    border-style: none;
+}
+.play-button{
+    cursor: pointer;
+}
+
+/*
+    Experience Editor Styles
+*/
+.disablePointerEvents {
+    pointer-events: none;
+}
+
+
+/*
+    HomeBanking Styles
+*/
+/**********************************
+*   1 - EuroBIC_HB_Theme            *
+**********************************/
+/**********************************
+*   2 - EuroBIC_Base_Theme            *
+**********************************/
+
+/**********************************
+*   1 - EuroBIC_HB_Theme            *
+**********************************/
+/** 6.09 PATTERNS > Usefull Classes *********************************/
+/*vertical-separator*/
+
+.vertical-separator > * {
+    padding: 0 10px;
+    border-left: 1px solid #808080;
+    display: inline-flex;
+}
+
+    .vertical-separator > *:first-child {
+        padding-left: 0;
+        border: none;
+    }
+/**
+* Text Classes
+*/
+.Heading1 {
+    line-height: 38px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.tablet .Heading1,
+.phone .Heading1 {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.Heading2 {
+    line-height: 29px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.tablet .Heading2,
+.phone .Heading2 {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.Heading3 {
+    line-height: 28px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.tablet .Heading3,
+.phone .Heading3 {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.Heading4 {
+    line-height: 26px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.tablet .Heading4,
+.phone .Heading4 {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.Heading5 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.tablet .Heading5,
+.phone .Heading5 {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.heading-line:after,
+.custom-panel__title:after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid #353535;
+    width: 30px;
+    padding-top: 5px;
+}
+
+.Text_regular {
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.Text_small {
+    line-height: 20px;
+    font-size: 12px !important;
+}
+
+.Text_Note {
+    line-height: 18px;
+    font-size: 10px;
+    font-weight: inherit;
+}
+
+.Text_Normal {
+    font-weight: 400;
+}
+
+.Text_Light {
+    font-weight: 300;
+}
+
+.Text_SemiBold {
+    font-weight: 600;
+}
+
+/**
+* Background Colors
+*/
+.Black {
+    background-color: #353535;
+}
+
+.Blue {
+    background-color: #0074c1;
+}
+
+.DarkBlue {
+    background-color: #2d4255;
+}
+
+.DarkPlum {
+    background-color: #970263;
+}
+
+.DarkRed {
+    background-color: #b51d23;
+}
+
+.Gray {
+    background-color: #DAE3E9;
+}
+
+.Green {
+    background-color: #00959a;
+}
+
+.LightGreen {
+    background-color: #34bfa3;
+}
+
+.Orange {
+    background-color: #f06c5d;
+}
+
+.Plum {
+    background-color: #f4a9ac;
+}
+
+.Red {
+    background-color: #e01b22;
+}
+
+.Silver {
+    color: inherit;
+    background-color: #dae3e9;
+}
+
+.Turquoise {
+    background-color: #6facf4;
+}
+
+.White {
+    background-color: #FFF;
+}
+
+.Yellow {
+    background-color: #f5a623;
+}
+
+.LightGray {
+    background-color: #e4e4e4;
+}
+
+.DarkGray {
+    background-color: #808080;
+}
+
+/**
+* Text Colors
+*/
+.Page .Text_color,
+.Text_color {
+    color: #353535;
+}
+
+.Page .Text_white,
+.Text_white {
+    color: #FFF;
+}
+
+.Page .Text_red,
+.Text_red {
+    color: #e01b22;
+}
+
+.Page .Text_darkRed,
+.Text_darkRed {
+    color: #b51d23;
+}
+
+.Page .Text_green,
+.Text_green {
+    color: #00959a;
+}
+
+.Page .Text_lightGreen,
+.Text_lightGreen {
+    color: #34bfa3;
+}
+
+.Page .Text_blue,
+.Text_blue {
+    color: #0074c1;
+}
+
+.Page .Text_darkblue,
+.Text_darkblue {
+    color: #2d4255;
+}
+
+.Page .Text_plum,
+.Text_plum {
+    color: #f4a9ac;
+}
+
+.Page .Text_darkplum,
+.Text_darkplum {
+    color: #970263;
+}
+
+.Page .Text_orange,
+.Text_orange {
+    color: #f06c5d;
+}
+
+.Page .Text_yellow,
+.Text_yellow {
+    color: #f5a623;
+}
+
+.Page .Text_silver,
+.Text_silver {
+    color: #8f9aa3;
+}
+
+.Page .Text_gray,
+.Text_gray {
+    color: #8f9aa3;
+}
+
+.Page .Text_black,
+.Text_black {
+    color: #353535;
+}
+
+.Page .Text_turquoise,
+.Text_turquoise {
+    color: #6facf4;
+}
+
+.Page .Text_lightgray,
+.Text_lightgray {
+    color: #8f9aa3;
+}
+
+.Page .Text_darkgray,
+.Text_darkgray {
+    color: #808080;
+}
+/*ListRecords*/
+.ListRecords--empty {
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+/**********************************
+*   2 - EuroBIC_Base_Theme            *
+**********************************/
+/**********************************
+*    $1. GENERAL PROPERTIES
+**********************************/
+/** Font **/
+.fa:before {
+    display: inline-block;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/HomeBanking/Montserrat-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/HomeBanking/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/HomeBanking/Montserrat-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/HomeBanking/Montserrat-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/HomeBanking/Montserrat-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+/**
+* EuroBICFonts
+*/
+@font-face {
+    font-family: 'EuroBicIcons';
+    src: url('/EuroBIC_Base_Resources/eurobicicons.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icon {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'EuroBicIcons' !important;
+    speak: none;
+    font-size: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    display: inline-block;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+/**
+EuroBicIcons Size
+*/
+.icon-extra_small {
+    font-size: 12px;
+}
+
+.icon-small {
+    font-size: 16px;
+}
+
+.icon-normal {
+    font-size: 20px;
+}
+
+.icon-medium {
+    font-size: 24px;
+}
+
+.icon-large {
+    font-size: 30px;
+}
+
+.icon-extra_large {
+    font-size: 60px;
+}
+/**
+EuroBicIcons
+*/
+.icon-add:before {
+    content: "\e900";
+}
+
+.icon-alert_fill:before {
+    content: "\e901";
+}
+
+.icon-alert:before {
+    content: "\e902";
+}
+
+.icon-analyze:before {
+    content: "\e903";
+}
+
+.icon-approve:before {
+    content: "\e904";
+}
+
+.icon-arrow_close:before {
+    content: "\e905";
+}
+
+.icon-arrow_left:before {
+    content: "\e906";
+}
+
+.icon-arrow_open:before {
+    content: "\e907";
+}
+
+.icon-arrow_right:before {
+    content: "\e908";
+}
+
+.icon-attach:before {
+    content: "\e909";
+}
+
+.icon-breadcrumb:before {
+    content: "\e90a";
+}
+
+.icon-calendar:before {
+    content: "\e90b";
+}
+
+.icon-camara:before {
+    content: "\e90c";
+}
+
+.icon-cards_view:before {
+    content: "\e90d";
+}
+
+.icon-cartao_cidadao:before {
+    content: "\e90e";
+}
+
+.icon-cartoes:before {
+    content: "\e90f";
+}
+
+.icon-change_user:before {
+    content: "\e910";
+}
+
+.icon-check_fill:before {
+    content: "\e911";
+}
+
+.icon-check:before {
+    content: "\e912";
+}
+
+.icon-circle_image:before {
+    content: "\e913";
+}
+
+.icon-click_call:before {
+    content: "\e914";
+}
+
+.icon-save:before {
+    content: "\e915";
+}
+
+.icon-close_circle_fill:before {
+    content: "\e916";
+}
+
+.icon-close_circle:before {
+    content: "\e917";
+}
+
+.icon-close:before {
+    content: "\e918";
+}
+
+.icon-comment:before {
+    content: "\e919";
+}
+
+.icon-connect:before {
+    content: "\e91a";
+}
+
+.icon-conta:before {
+    content: "\e91b";
+}
+
+.icon-contas:before {
+    content: "\e91c";
+}
+
+.icon-credito_habitacao:before {
+    content: "\e91d";
+}
+
+.icon-creditos_grey:before {
+    content: "\e91e";
+}
+
+.icon-decision:before {
+    content: "\e91f";
+}
+
+.icon-delete:before {
+    content: "\e920";
+}
+
+.icon-document_alert:before {
+    content: "\e921";
+}
+
+.icon-document_check:before {
+    content: "\e922";
+}
+
+.icon-document_error:before {
+    content: "\e923";
+}
+
+.icon-document_load:before {
+    content: "\e924";
+}
+
+.icon-document_received:before {
+    content: "\e925";
+}
+
+.icon-document_sent:before {
+    content: "\e926";
+}
+
+.icon-document:before {
+    content: "\e927";
+}
+
+.icon-download:before {
+    content: "\e928";
+}
+
+.icon-edit:before {
+    content: "\e929";
+}
+
+.icon-email_open:before {
+    content: "\e92a";
+}
+
+.icon-email_received:before {
+    content: "\e92b";
+}
+
+.icon-email_sent:before {
+    content: "\e92c";
+}
+
+.icon-email:before {
+    content: "\e92d";
+}
+
+.icon-error:before {
+    content: "\e92e";
+}
+
+.icon-favorite_fill:before {
+    content: "\e92f";
+}
+
+.icon-favorite:before {
+    content: "\e930";
+}
+
+.icon-filter:before {
+    content: "\e931";
+}
+
+.icon-financiamento:before {
+    content: "\e932";
+}
+
+.icon-flow:before {
+    content: "\e933";
+}
+
+.icon-gabi_emp:before {
+    content: "\e934";
+}
+
+.icon-galeria:before {
+    content: "\e935";
+}
+
+.icon-graphics:before {
+    content: "\e936";
+}
+
+.icon-help:before {
+    content: "\e937";
+}
+
+.icon-info:before {
+    content: "\e938";
+}
+
+.icon-investimentos:before {
+    content: "\e939";
+}
+
+.icon-linha_netpay:before {
+    content: "\e93a";
+}
+
+.icon-linkedin:before {
+    content: "\e93b";
+}
+
+.icon-list_view:before {
+    content: "\e93c";
+}
+
+.icon-lista_app:before {
+    content: "\e93d";
+}
+
+.icon-lista:before {
+    content: "\e93e";
+}
+
+.icon-load:before {
+    content: "\e93f";
+}
+
+.icon-logout:before {
+    content: "\e940";
+}
+
+.icon-maintenence:before {
+    content: "\e941";
+}
+
+.icon-menu_arrow_rback:before {
+    content: "\e942";
+}
+
+.icon-menu_arrow_right:before {
+    content: "\e943";
+}
+
+.icon-menu_close:before {
+    content: "\e944";
+}
+
+.icon-menu_open:before {
+    content: "\e945";
+}
+
+.icon-more-quare:before {
+    content: "\e946";
+}
+
+.icon-my_location:before {
+    content: "\e947";
+}
+
+.icon-netpay:before {
+    content: "\e948";
+}
+
+.icon-notify:before {
+    content: "\e949";
+}
+
+.icon-operacoes:before {
+    content: "\e94a";
+}
+
+.icon-pagamentos:before {
+    content: "\e94b";
+}
+
+.icon-password_invisible:before {
+    content: "\e94c";
+}
+
+.icon-password_visible:before {
+    content: "\e94d";
+}
+
+.icon-personal_data:before {
+    content: "\e94e";
+}
+
+.icon-phone:before {
+    content: "\e94f";
+}
+
+.icon-pin_fill:before {
+    content: "\e950";
+}
+
+.icon-pin:before {
+    content: "\e951";
+}
+
+.icon-posicao_global:before {
+    content: "\e952";
+}
+
+.icon-position:before {
+    content: "\e953";
+}
+
+.icon-poupanca:before {
+    content: "\e954";
+}
+
+.icon-print:before {
+    content: "\e955";
+}
+
+.icon-reclamacoes:before {
+    content: "\e956";
+}
+
+.icon-recuperar_sim:before {
+    content: "\e957";
+}
+
+.icon-refresh:before {
+    content: "\e958";
+}
+
+.icon-search:before {
+    content: "\e959";
+}
+
+.icon-sendEmail:before {
+    content: "\e95a";
+}
+
+.icon-settings_horizontal_border:before {
+    content: "\e95b";
+}
+
+.icon-settings_horizontal:before {
+    content: "\e95c";
+}
+
+.icon-settings_vertical:before {
+    content: "\e95d";
+}
+
+.icon-share:before {
+    content: "\e95e";
+}
+
+.icon-table:before {
+    content: "\e95f";
+}
+
+.icon-task:before {
+    content: "\e960";
+}
+
+.icon-time:before {
+    content: "\e961";
+}
+
+.icon-toFile:before {
+    content: "\e962";
+}
+
+.icon-transferencias:before {
+    content: "\e963";
+}
+
+.icon-transferir:before {
+    content: "\e964";
+}
+
+.icon-upload:before {
+    content: "\e965";
+}
+
+.icon-user_profile:before {
+    content: "\e966";
+}
+
+.icon-user:before {
+    content: "\e967";
+}
+
+.icon-view_less:before {
+    content: "\e968";
+}
+
+.icon-view_more:before {
+    content: "\e969";
+}
+
+.icon-view:before {
+    content: "\e96a";
+}
+
+.icon-youtube:before {
+    content: "\e96b";
+}
+
+.icon-zoom_in:before {
+    content: "\e96c";
+}
+
+.icon-zoom_out:before {
+    content: "\e96d";
+}
+
+.icon-zoom:before {
+    content: "\e96e";
+}
+
+.icon-screen_off:before {
+    content: "\e96f";
+}
+
+.icon-screen_on:before {
+    content: "\e970";
+}
+
+.icon-client:before {
+    content: "\e971";
+}
+
+.icon-Compose:before {
+    content: "\e972";
+}
+
+.icon-del:before {
+    content: "\e973";
+}
+
+.icon-send:before {
+    content: "\e974";
+}
+
+.icon-unarchive:before {
+    content: "\e975";
+}
+
+.icon-Alojamento:before {
+    content: "\e976";
+}
+
+.icon-Compras:before {
+    content: "\e977";
+}
+
+.icon-Comunicacao:before {
+    content: "\e978";
+}
+
+.icon-Construcao:before {
+    content: "\e979";
+}
+
+.icon-Diversos:before {
+    content: "\e97a";
+}
+
+.icon-Educacao:before {
+    content: "\e97b";
+}
+
+.icon-Estado:before {
+    content: "\e97c";
+}
+
+.icon-Financas:before {
+    content: "\e97d";
+}
+
+.icon-Lazer:before {
+    content: "\e97e";
+}
+
+.icon-Limpeza:before {
+    content: "\e97f";
+}
+
+.icon-Restauracao:before {
+    content: "\e980";
+}
+
+.icon-Saude:before {
+    content: "\e981";
+}
+
+.icon-Seguros:before {
+    content: "\e982";
+}
+
+.icon-Services:before {
+    content: "\e983";
+}
+
+.icon-Transportes:before {
+    content: "\e984";
+}
+
+.icon-Vestuario:before {
+    content: "\e985";
+}
+
+.icon-Bill_received:before {
+    content: "\e986";
+}
+
+.icon-cards_view-alt:before {
+    content: "\e987";
+}
+
+.icon-back_arrow_circle:before {
+    content: "\e988";
+}
+
+.icon-clock_circle:before {
+    content: "\e989";
+}
+
+.icon-elipsis_circle:before {
+    content: "\e98a";
+}
+
+.icon-rede_agencias:before {
+    content: "\e98b";
+}
+
+.icon-comment_simple:before {
+    content: "\e98c";
+}
+
+
+
+html,
+body,
+a,
+select,
+fieldset,
+input,
+button,
+select,
+textarea,
+optgroup,
+option {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*html,
+body,
+form {
+    height: 100%;
+    position: relative;
+}*/
+
+body,
+select,
+textarea,
+input {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 22px;
+}
+
+body {
+    background-color: #FFF;
+    color: #2D4255;
+    -webkit-overflow-scrolling: touch;
+    -webkit-tap-highlight-color: transparent;
+}
+
+img {
+    max-width: 100%;
+}
+
+select,
+textarea,
+input {
+    color: #1F1F1F;
+}
+
+div[onclick] {
+    cursor: pointer;
+    /* Add a pointer cursor when the div has a click event */
+}
+
+input::-webkit-contacts-auto-fill-button {
+    /*Hide safari input icons*/
+    visibility: hidden;
+    display: none !important;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+}
+/*Hide edge/ie inputs cross clear and password show eye*/
+input::-ms-clear,
+input[type=password]::-ms-reveal {
+    display: none;
+}
+
+::-moz-selection {
+    background: rgba(233, 80, 69, .8);
+    color: #fff;
+}
+
+::selection {
+    background-color: #e01b22;
+    color: #fff;
+}
+
+/* hack to fix flickering on inputs, links and buttons when opacity change */
+a,
+input,
+button {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.Page {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.fadeImage {
+    opacity: .14;
+}
+
+@-webkit-keyframes loading {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loading {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/**
+* Links
+*/
+a,
+a:link,
+a:visited {
+    color: #e95045;
+    -webkit-transition: color 1ms ease;
+    -o-transition: color 1ms ease;
+    transition: color 1ms ease;
+    cursor: pointer;
+}
+
+    a:hover,
+    a:link:hover,
+    a:visited:hover {
+        color: #a33732;
+        text-decoration: none;
+    }
+
+    a + a {
+        margin-left: 10px;
+    }
+
+    a:not(.Button) > .icon + div.OSInline,
+    a:not(.Button) > div.OSInline + .icon {
+        margin-left: 5px;
+    }
+
+.OSAutoMarginTop {
+    margin-top: 30px;
+}
+
+.MarginTopNormal {
+    margin-top: 20px;
+}
+
+.OSMarginTop, .MarginTopBig {
+    margin-top: 30px;
+}
+
+.MarginTopSmall {
+    margin-top: 10px;
+}
+
+.MarginBottomSmall {
+    margin-bottom: 10px;
+}
+
+.MarginLeft {
+    margin-left: 20px;
+}
+
+.MarginLeftSmall {
+    margin-left: 10px;
+}
+
+.noMargin {
+    margin: 0 !important;
+}
+
+.noMarginTop {
+    margin-top: 0 !important;
+}
+
+.noMarginRight {
+    margin-right: 0 !important;
+}
+
+.noMarginBottom {
+    margin-bottom: 0 !important;
+}
+
+.noMarginLeft {
+    margin-left: 0 !important;
+}
+
+/**********************************
+*         $2. STRUCTURE
+**********************************/
+
+html .ThemeGrid_Container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1300px;
+    padding: 0 30px;
+}
+
+html .phone .ThemeGrid_Container {
+    padding: 0 20px;
+}
+
+/*Content*/
+.Content {
+    height: auto;
+    padding-top: 60px;
+}
+/*Main Content*/
+.MainContent {
+    padding: 20px 0;
+}
+
+.Page.active .MainContent {
+    pointer-events: none;
+}
+
+/**
+* Footer
+*/
+.Footer {
+    background-color: #263238;
+    font-size: 12px;
+    min-height: 80px;
+    line-height: 1;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+.OSInlineClear {
+    /* This style will never be used in runtime.
+  When applied in Service Studio, it will prevent the style 'OSInline' from being
+  automatically applied to divs and tables with widths != (fill parent) */
+}

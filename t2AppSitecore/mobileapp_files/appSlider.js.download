@@ -1,0 +1,16 @@
+﻿var $card = $('.slider-card');
+var lastCard = $(".card-list .slider-card").length - 1;
+
+$(document).ready(function () {
+	$('.close').click(function () {
+		var prependList = function () {
+            if ($('.slider-card').hasClass('activeNow')) {
+                var $slicedCard = $('.slider-card').slice(lastCard).removeClass('transformThis activeNow');
+				$('ul').prepend($slicedCard);
+			}
+		}
+		$('li').last().removeClass('activeNow');
+		$('li').last().addClass('transformThis').prev().addClass('activeNow');
+		setTimeout(function () { prependList(); }, 150);
+	});
+});

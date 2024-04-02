@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)https://www.eurobic.pt/mobileapp -->
+<html lang="pt"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!--<base target="_parent">--><base href="." target="_parent">
+
+    
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11">
+
+    <link rel="stylesheet" href="./mobileapp_files/font-awesome.min.css">
+    <link rel="stylesheet" href="./mobileapp_files/styles.css">
+    <link rel="stylesheet" href="./mobileapp_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./mobileapp_files/homebanking.css">
+
+    <link rel="shortcut icon" href="https://www.eurobic.pt/images/favicon.ico" type="image/vnd.microsoft.icon">
+
+    <script src="./mobileapp_files/jquery.min.js.download" type="text/javascript"></script>
+
+    
+</head>
+
+<body>
+
+    <main role="main">
+        
+
+
+<script src="./mobileapp_files/appSlider.js.download" type="text/javascript"></script>
+<link rel="stylesheet" href="./mobileapp_files/appSlider.css">
+
+<div class="app-slider">
+    <div class="card-stack">
+        <ul class="card-list">
+                <li class="slider-card" style="background: #ffffff;  box-shadow: 0 0 19px 0 rgb(0 0 0 / 5%); ">
+                        <button type="button" class="close" aria-label="Close" style="position: absolute; color: black; top: 0; right: 0; margin: 0px 5px 0 0;">
+                            <span aria-hidden="true" style="font-size: 25px; font-weight: 350; text-shadow: none">×</span>
+                        </button>
+                                            <div class="card-content" style="display: flex; width: 100%;cursor:pointer;" onclick="window.open(&#39;https://www.eurobic.pt/poupanca-e-investimento/dp-nao-mobilizaveis-6-12-18&#39;,&#39;_blank&#39;)">
+                            <picture style="width:100%;">
+                                <!--
+                                <source media="(max-width: 480px)" srcset="./mobileapp_files/Banner-App-N-mobilizaveis-mobile-novatx.png">
+                                <source media="(min-width: 481px)" srcset="./mobileapp_files/Banner-App-N-mobilizaveis-mobile-novatx.png">
+                                 -->
+                                <img src="./mobileapp_files/Banner-App-N-mobilizaveis-mobile-novatx.png" alt="Sun" class="card-list__image" style="width:100%;height: 83px;border-radius: 9px; margin: 0px;">
+                               
+                            </picture>
+                        </div>
+                </li>
+                <li class="slider-card" style="background: #ffffff;  box-shadow: 0 0 19px 0 rgb(0 0 0 / 5%); ">
+                        <button type="button" class="close" aria-label="Close" style="position: absolute; color: black; top: 0; right: 0; margin: 0px 5px 0 0;">
+                            <span aria-hidden="true" style="font-size: 25px; font-weight: 350; text-shadow: none">×</span>
+                        </button>
+                                            <div class="card-content" style="display: flex; width: 100%;cursor:pointer;" onclick="window.open(&#39;/eurobic/extrato-comissoes&#39;,&#39;_blank&#39;)">
+                            <picture style="width:100%;">
+                                <!--
+                                <source media="(max-width: 480px)" srcset="/-/media/Feature/MobileApp/Extrato-Comissoes/EuroBic-BannerApp-NetBanco-Mobile.png">
+                                <source media="(min-width: 481px)" srcset="/-/media/Feature/MobileApp/Extrato-Comissoes/EuroBic-BannerApp-NetBanco-Tablet.png">
+                                 -->
+                                <img src="./mobileapp_files/EuroBic-BannerApp-NetBanco-Mobile.png" alt="Sun" class="card-list__image" style="width:100%;height: 83px;border-radius: 9px; margin: 0px;">
+                            </picture>
+                        </div>
+                </li>
+        </ul>
+    </div>
+</div>
+    </main>
+
+    <script src="./mobileapp_files/velocity.min.js.download" type="text/javascript"></script>
+    <script src="./mobileapp_files/popper.min.js.download" type="text/javascript"></script>
+    <script src="./mobileapp_files/bootstrap.min.js.download" type="text/javascript"></script>
+
+    <script>
+        // Get height of document
+        function getDocHeight(doc) {
+            doc = doc || document;
+            // from http://stackoverflow.com/questions/1145850/get-height-of-entire-document-with-javascript
+            var body = doc.body, html = doc.documentElement;
+            var height = Math.max(body.scrollHeight, body.offsetHeight,
+                html.clientHeight, html.scrollHeight, html.offsetHeight);
+            return height;
+        }
+
+        // send docHeight onload
+        function sendDocHeightMsg(e) {
+            var ht = getDocHeight();
+            parent.postMessage(JSON.stringify({ 'docHeight': ht }), '*');
+        }
+
+        // assign onload handler
+        if (window.addEventListener) {
+            window.addEventListener('load', sendDocHeightMsg, false);
+        }
+        // resize handler
+        var resizeWindow;
+        window.onresize = function () {
+            clearTimeout(resizeWindow);
+            resizeWindow = setTimeout(sendDocHeightMsg, 100);
+        };
+
+    </script>
+
+</body></html>
